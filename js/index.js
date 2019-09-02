@@ -40,6 +40,8 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Nav Elements
 let linkServices = document.querySelectorAll('a')[0];
 let linkProduct = document.querySelectorAll('a')[1];
 let linkVision = document.querySelectorAll('a')[2];
@@ -54,10 +56,42 @@ linkFeatures.innerText = "Features";
 linkAbout.innerText = "About";
 linkContact.innerText= "Contact";
 
+//cta elements
 let bigText = document.querySelector('div.cta-text h1');
 let ctaButton = document.querySelector('div.cta-text button');
 let codeSnippetImg = document.getElementById("cta-img");
 
 bigText.innerText = "DOM Is Awesome";
 ctaButton.innerText = "Get Started";
-codeSnippetImg.setAttribute('src', siteContent["cta"]["img-src"])
+codeSnippetImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
+//main content
+let featuresHeader = document.querySelectorAll('div.text-content h4')[0];
+let featuresContent = document.querySelectorAll('div.text-content p')[0];
+
+featuresHeader.innerText = "Features";
+featuresContent.innerText = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let aboutHeader = document.querySelectorAll('div.text-content h4')[1];
+let aboutContent = document.querySelectorAll('div.text-content p')[1];
+
+aboutHeader.innerText = "About";
+aboutContent.innerText = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let middleImg = document.getElementById("middle-img");
+
+
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let servicesHeader = document.querySelectorAll('div.text-content h4')[2];
+let servicesContent = document.querySelectorAll('div.text-content p')[2];
+
+servicesHeader.innerText = "Services";
+servicesContent.innerText = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let productHeader = document.querySelectorAll('div.text-content h4')[3];
+let productContent = document.querySelectorAll('div.text-content p')[3];
+
+productHeader.innerText = "Product";
+productContent.innerText = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
