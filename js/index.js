@@ -123,14 +123,35 @@ footerText.innerText = "Copyright Great Idea! 2018"
 //New Content
 let navLinks = document.querySelectorAll('nav a');
 let navLinksLength = document.querySelectorAll('nav a').length;
-// navLinks[0].classList.add("greenClass");
+
 
 for (let i = 0; i < navLinksLength;i++){
-  
-  navLinks[i].classList.add("greenClass");
-  const greenClass = document.querySelectorAll('.greenClass')[i];
-  greenClass.style.color = "green";
+  navLinks[i].style.color = 'green';
 }
+// for (let i = 0; i < navLinksLength;i++){
+  
+//   navLinks[i].classList.add("greenClass");
+//   const greenClass = document.querySelectorAll('.greenClass')[i];
+//   greenClass.style.color = "green";
+// }
 
+let newNavLink1 = document.createElement("a");
+let newNavLink2 = document.createElement("a");
+let navEl =  document.querySelector('nav');
 
-// navText[0].className
+newNavLink1.innerHTML = "Start";
+newNavLink2.innerHTML = "End";
+navEl.prepend(newNavLink1, linkServices)
+navEl.appendChild(newNavLink2, linkContact)
+
+newNavLink1.style.color = 'green';
+newNavLink2.style.color = 'green';
+
+// let startLocation = document.querySelectorAll("nav a")[0]; 
+// let endLocation = document.querySelectorAll("nav a")[5]; 
+  // add the text node to the newly created div
+  // newNavLink1.appendChild("nav");  
+  // newNavLink2.prependChild("nav");  
+
+// var currentDiv = document.querySelectorAll("nav a")[0]; 
+//   document.body.insertBefore(newDiv, currentDiv)
