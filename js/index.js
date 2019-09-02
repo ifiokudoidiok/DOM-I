@@ -119,3 +119,18 @@ emailText.innerText = "sales@greatidea.io";
 //Footer
 let footerText = document.querySelector('footer p');
 footerText.innerText = "Copyright Great Idea! 2018"
+
+//New Content
+let navLinks = document.querySelectorAll('nav a');
+let navLinksLength = document.querySelectorAll('nav a').length;
+// navLinks[0].classList.add("greenClass");
+
+for (let i = 0; i < navLinksLength;i++){
+  
+  navLinks[i].classList.add("greenClass");
+  const greenClass = document.querySelectorAll('.greenClass')[i];
+  greenClass.style.color = "green";
+}
+
+
+// navText[0].className
