@@ -61,7 +61,7 @@ let bigText = document.querySelector('div.cta-text h1');
 let ctaButton = document.querySelector('div.cta-text button');
 let codeSnippetImg = document.getElementById("cta-img");
 
-bigText.innerText = "DOM Is Awesome";
+bigText.innerText = "DOM\n Is\n Awesome";
 ctaButton.innerText = "Get Started";
 codeSnippetImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
@@ -96,6 +96,13 @@ let productContent = document.querySelectorAll('div.text-content p')[3];
 productHeader.innerText = "Product";
 productContent.innerText = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
+let visionHeader = document.querySelectorAll('div.text-content h4')[4];
+let visionContent = document.querySelectorAll('div.text-content p')[4];
+
+visionHeader.innerText = "Vision";
+visionContent.innerText = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+
 
 //Contact
 let contactHeader = document.querySelector('section.contact h4');
@@ -105,6 +112,10 @@ let addressText = document.querySelectorAll('section.contact p')[0];
 let phoneDetails = document.querySelectorAll('section.contact p')[1];
 let emailText = document.querySelectorAll('section.contact p')[2];
 
-addressText.innerText = "123 Way 456 Street Somewhere, USA";
+addressText.innerText = "123 Way 456 Street \nSomewhere, USA";
 phoneDetails.innerText = "1 (888) 888-8888";
 emailText.innerText = "sales@greatidea.io";
+
+//Footer
+let footerText = document.querySelector('footer p');
+footerText.innerText = "Copyright Great Idea! 2018"
