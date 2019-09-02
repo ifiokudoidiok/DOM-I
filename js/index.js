@@ -146,6 +146,7 @@ navEl.appendChild(newNavLink2, linkContact)
 
 newNavLink1.style.color = 'green';
 newNavLink2.style.color = 'green';
+document.body.style.backgroundColor = "#f0fffa";
 
 // let startLocation = document.querySelectorAll("nav a")[0]; 
 // let endLocation = document.querySelectorAll("nav a")[5]; 
