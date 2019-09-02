@@ -95,3 +95,16 @@ let productContent = document.querySelectorAll('div.text-content p')[3];
 
 productHeader.innerText = "Product";
 productContent.innerText = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+
+//Contact
+let contactHeader = document.querySelector('section.contact h4');
+contactHeader.innerText = "Contact";
+
+let addressText = document.querySelectorAll('section.contact p')[0];
+let phoneDetails = document.querySelectorAll('section.contact p')[1];
+let emailText = document.querySelectorAll('section.contact p')[2];
+
+addressText.innerText = "123 Way 456 Street Somewhere, USA";
+phoneDetails.innerText = "1 (888) 888-8888";
+emailText.innerText = "sales@greatidea.io";
