@@ -49,12 +49,12 @@ let linkFeatures = document.querySelectorAll('a')[3];
 let linkAbout = document.querySelectorAll('a')[4];
 let linkContact = document.querySelectorAll('a')[5];
 
-linkServices.innerText = "Services";
-linkProduct.innerText = "Product";
-linkVision.innerText = "Vision";
-linkFeatures.innerText = "Features";
-linkAbout.innerText = "About";
-linkContact.innerText= "Contact";
+linkServices.innerText = siteContent["nav"]["nav-item-1"];
+linkProduct.innerText = siteContent["nav"]["nav-item-2"];
+linkVision.innerText = siteContent["nav"]["nav-item-3"];
+linkFeatures.innerText = siteContent["nav"]["nav-item-4"];
+linkAbout.innerText = siteContent["nav"]["nav-item-5"];
+linkContact.innerText= siteContent["nav"]["nav-item-6"];
 
 //cta elements
 let bigText = document.querySelector('div.cta-text h1');
