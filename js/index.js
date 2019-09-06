@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM\n Is\n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street \nSomewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -61,8 +61,8 @@ let bigText = document.querySelector('div.cta-text h1');
 let ctaButton = document.querySelector('div.cta-text button');
 let codeSnippetImg = document.getElementById("cta-img");
 
-bigText.innerText = "DOM\n Is\n Awesome";
-ctaButton.innerText = "Get Started";
+bigText.innerText = siteContent["cta"]["h1"]
+ctaButton.innerText =  siteContent["cta"]["button"];
 codeSnippetImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 
@@ -70,14 +70,14 @@ codeSnippetImg.setAttribute('src', siteContent["cta"]["img-src"]);
 let featuresHeader = document.querySelectorAll('div.text-content h4')[0];
 let featuresContent = document.querySelectorAll('div.text-content p')[0];
 
-featuresHeader.innerText = "Features";
-featuresContent.innerText = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+featuresHeader.innerText = siteContent["main-content"]["features-h4"];
+featuresContent.innerText = siteContent["main-content"]["features-content"];
 
 let aboutHeader = document.querySelectorAll('div.text-content h4')[1];
 let aboutContent = document.querySelectorAll('div.text-content p')[1];
 
-aboutHeader.innerText = "About";
-aboutContent.innerText = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+aboutHeader.innerText = siteContent["main-content"]["about-h4"];
+aboutContent.innerText = siteContent["main-content"]["about-content"];
 
 let middleImg = document.getElementById("middle-img");
 
@@ -87,38 +87,39 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 let servicesHeader = document.querySelectorAll('div.text-content h4')[2];
 let servicesContent = document.querySelectorAll('div.text-content p')[2];
 
-servicesHeader.innerText = "Services";
-servicesContent.innerText = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+servicesHeader.innerText = siteContent["main-content"]["services-h4"];
+servicesContent.innerText = siteContent["main-content"]["services-content"];
 
 let productHeader = document.querySelectorAll('div.text-content h4')[3];
 let productContent = document.querySelectorAll('div.text-content p')[3];
 
-productHeader.innerText = "Product";
-productContent.innerText = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+productHeader.innerText = siteContent["main-content"]["product-h4"];
+productContent.innerText = siteContent["main-content"]["product-content"];
 
 let visionHeader = document.querySelectorAll('div.text-content h4')[4];
 let visionContent = document.querySelectorAll('div.text-content p')[4];
 
-visionHeader.innerText = "Vision";
-visionContent.innerText = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+visionHeader.innerText = siteContent["main-content"]["vision-h4"];
+visionContent.innerText = siteContent["main-content"]["vision-content"];
 
 
 
 //Contact
 let contactHeader = document.querySelector('section.contact h4');
-contactHeader.innerText = "Contact";
+contactHeader.innerText = siteContent["contact"]["contact-h4"];
 
 let addressText = document.querySelectorAll('section.contact p')[0];
 let phoneDetails = document.querySelectorAll('section.contact p')[1];
 let emailText = document.querySelectorAll('section.contact p')[2];
 
-addressText.innerText = "123 Way 456 Street \nSomewhere, USA";
-phoneDetails.innerText = "1 (888) 888-8888";
-emailText.innerText = "sales@greatidea.io";
+
+addressText.innerText =  siteContent["contact"]["address"];
+phoneDetails.innerText =  siteContent["contact"]["phone"];;
+emailText.innerText =  siteContent["contact"]["email"];;
 
 //Footer
 let footerText = document.querySelector('footer p');
-footerText.innerText = "Copyright Great Idea! 2018"
+footerText.innerText =  siteContent["footer"]["copyright"];;
 
 //New Content
 let navLinks = document.querySelectorAll('nav a');
